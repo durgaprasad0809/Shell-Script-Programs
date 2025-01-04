@@ -2,13 +2,13 @@
 
 USERID=$(id -u)
 
-echo "Current User id is ::" ${USERID}
+echo "Current User id is ::" ${USERID} # Normal User Id is 1001 and Sudo User Id is 0
 
-# if [ $USERID -ne 0 ]
-# then
-#     echo "ERROR:: You must have sudo access to execute this script"
-#     exit 1 #other than 0
-# fi
+if [ $USERID -ne 0 ]
+then
+    echo "ERROR:: You must have sudo access to execute this script"
+    exit 1 #other than 0
+fi
 
 # dnf list installed mysql
 
