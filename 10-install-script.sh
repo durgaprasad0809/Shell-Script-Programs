@@ -41,4 +41,4 @@ else
 fi
 
 # To Installation command of the mysql Software
-dnf list installed mysql
+dnf list installed mysql-shell
