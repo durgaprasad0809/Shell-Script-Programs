@@ -42,3 +42,11 @@ fi
 
 # To Installation command of the mysql Software
 dnf list install mysql
+
+if [ $? -ne 0 ]
+then
+    echo "Installing MySql ... FAILURE"
+    exit 1
+else
+    echo "Installing MySql ... SUCCESS"
+fi
