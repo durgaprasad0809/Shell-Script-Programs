@@ -2,6 +2,8 @@
 
 USERID=$(id -u)
 
+echo "Current User id is ::" ${USERID}
+
 # if [ $USERID -ne 0 ]
 # then
 #     echo "ERROR:: You must have sudo access to execute this script"
