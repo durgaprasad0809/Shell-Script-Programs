@@ -59,11 +59,11 @@ then
     dnf install mysql -y
     if [ $? -ne 0 ]
     then
-        echo "Installing Git ... FAILURE"
+        echo "Installing MySQL ... FAILURE"
         exit 1
     else
-        echo "Installing Git ... SUCCESS"
+        echo "Installing MySQL ... SUCCESS"
     fi
 else
-    echo "Git is already ... INSTALLED"
+    echo "MySQL is already ... INSTALLED"
 fi
