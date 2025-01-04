@@ -43,10 +43,27 @@ fi
 # To Installation command of the mysql Software
 dnf list install mysql
 
+# To Installation the MySql software without checking condtion whether this MySql software is installed or not
+# if [ $? -ne 0 ]
+# then
+#     echo "Installing MySql ... FAILURE"
+#     exit 1
+# else
+#     echo "Installing MySql ... SUCCESS"
+# fi
+
+#To Installation the MySql software with checking condtion whether this MySql software is installed or not. 
+# In case if it is this MySql software is already installed, it will show the already this MySql is installed
 if [ $? -ne 0 ]
 then
-    echo "Installing MySql ... FAILURE"
-    exit 1
+    dnf install mysql -y
+    if [ $? -ne 0 ]
+    then
+        echo "Installing Git ... FAILURE"
+        exit 1
+    else
+        echo "Installing Git ... SUCCESS"
+    fi
 else
-    echo "Installing MySql ... SUCCESS"
+    echo "Git is already ... INSTALLED"
 fi
