@@ -10,7 +10,11 @@ then
     exit 1 #other than 0
 fi
 
-# dnf list installed mysql
+# To Installation command of the mysql Software
+dnf list installed mysql
+
+# To Installation command of the Git Software
+dnf list installed git
 
 # if [ $? -ne 0 ]
 # then # not installed
