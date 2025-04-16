@@ -3,9 +3,9 @@
 USERID=$(id -u)
 
 #Colors Declerations
-R="\e[31m]"
-G="\e[32m]"
-Y="\e[33m]"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
 
 #Logs Declerations
 LOGS_FOLDER="/var/log/shell-script-logs"

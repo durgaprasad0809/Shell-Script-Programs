@@ -3,9 +3,9 @@
 USERID=$(id -u)
 
 #Colors Declerations
-R="\e[31m]"
-G="\e[32m]"
-Y="\e[33m]"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
 
 echo "Current User id is ::" ${USERID} # Normal User Id is 1001 and Sudo User Id is 0
 
